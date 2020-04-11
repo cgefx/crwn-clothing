@@ -7,7 +7,6 @@ import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
 
 import './sign-up.styles.scss';
 
-
 class SignUp extends React.Component {
   constructor(props) {
     super(props)
@@ -21,9 +20,7 @@ class SignUp extends React.Component {
   }
 
   handleSubmit = async event => {
-
     event.preventDefault();
-
     const { displayName, email, password, confirmPassword } = this.state;
 
     if (password !== confirmPassword) {
@@ -51,7 +48,6 @@ class SignUp extends React.Component {
   }
 
   render() {
-
     const { displayName, email, password, confirmPassword } = this.state;
 
     return (
